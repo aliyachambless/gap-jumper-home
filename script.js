@@ -1042,7 +1042,7 @@ void draw()
     whyScreen();
    }
 };
-$("body").keydown(function(c){
+$("canvas").keydown(function(c){
    c.preventDefault();
    //keyIsPressed = true;
    if (c.keyCode == 39) {
@@ -1086,7 +1086,7 @@ $("body").keydown(function(c){
     }
     */
 });
-$("canvas").keyup(function(c){
+$("body").keyup(function(c){
    if (c.keyCode == 39) {
       moving = false;
       speed = 0;
