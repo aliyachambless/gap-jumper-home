@@ -464,9 +464,9 @@ var menuScreen = function(){
     mouseClicked = function() {
         if (mouseX >= playBtnX && mouseX <= (playBtnX+playBtnWidth) &&
             mouseY >= playBtnY && mouseY <= (playBtnY+playBtnHeight)) {
+            count = 60;
             instructions = true;
             menu = false;
-            count = 60;
         }
         if (mouseX >= playBtnX+200 && mouseX <= ((playBtnX+200)+playBtnWidth) &&
             mouseY >= playBtnY && mouseY <= (playBtnY+playBtnHeight)) {
