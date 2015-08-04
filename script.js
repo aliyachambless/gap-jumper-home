@@ -957,7 +957,7 @@ var play = function(){
     currentPlayer.move();
     
     for (var t = 0; t < buildings.length; t++) {
-      if (currentPlayer.x > buildings[t].xPos && currentPlayer.x < buildings[t].xPos + 100) {
+      if (currentPlayer.x > buildings[t].xPos && currentPlayer.x < buildings[t].xPos + 101) {
          if (currentPlayer.y > buildings[t+1].tall-42 && currentPlayer.x > buildings[t+1].xPos - 25) {
             stop = true;
             speed = 0;
