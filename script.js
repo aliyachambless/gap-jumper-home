@@ -628,31 +628,32 @@ var instructionScreen = function(){
     
        if (count <60) {
         fill(255, 250, 148);
-        textFont("courier", 30);
-        text("GOAL: ", 160,165);
+        textFont("courier", 25);
+        text("GOAL: ", 100,165);
         fill(255,255,255);
-        text("In 60 seconds, collect as many coins as you can to go beyond ",255,165);
-        text("             the poverty line ($10,000). Each coin is worth $200!",155,190);
+        text("You will be assigned a random character. In 60 seconds, collect as many coins ",200,165);
+        text("             as you can to go beyond the poverty line ($10,000). Each coin is worth $200!",155,190);
     }
     if (count <59) {
-        textFont("courier", 30);
+        textFont("courier", 25);
         fill(255, 250, 148);
         text("HOW: ",190,230);
         fill(255,255,255);
         text(" Press the space to jump and the right arrow key to run.", 270,230);
+        text("Keep in mind, just like in life, there is no going back! Only forward!",270,260);
     }
     if (count<58) {
         fill(255, 250, 148);
-        textFont("courier", 30);
-        text("CAUTION:",130,270);
+        textFont("courier", 25);
+        text("CAUTION:",130,300);
         fill(255,255,255);
-        text(" Everyone experiences obstacles in life, and yours are spikes!",270,270);
-        text("                   Do NOT step on the spikes or you will lose coins!",120,300);
+        text(" Everyone experiences obstacles in life, and yours are spikes!",270,295);
+        text("                   Do NOT step on the spikes or you will lose coins!",120,325);
     }
     if (count<57) {
         fill(255, 250, 148);
-        textFont("helvetica",30);
-        text("Press space to play!", 480,350);
+        textFont("helvetica",25);
+        text("Press space to play!", 480,360);
     }
 };
 
