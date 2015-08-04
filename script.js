@@ -729,7 +729,7 @@ var statScreen = function(){
       text("Here is the averages of other ethnicities compared to a Caucasian man:",4,200);
       //white guy
       image = new Image();
-      image.src = "white man icon.png";
+      image.src = "white man icon .png";
       var ctx = document.getElementById('mycanvas').getContext('2d');
       ctx.drawImage(image,5,yPos+100);
       fill(128, 122, 0,80);
@@ -819,10 +819,34 @@ var statScreen = function(){
         mouseClicked = function() {
             if (mouseX >= playBtnX && mouseX <= (playBtnX+playBtnWidth) &&
                 mouseY >= playBtnY && mouseY <= (playBtnY+playBtnHeight)) {
+                var characterChoose = floor(random(0,4));
+                //var characterChoose = 0;
+                if (characterChoose == 0) {
+                   currentPlayer = new Player(110,100,"A Caucasian");
+                   percent = 0.78;
+                   console.log("white");
+                }
+                if (characterChoose == 1) {
+                   currentPlayer = new Player(110,100,"An African-American");
+                   percent = 0.64;
+                   console.log("black");
+                }
+                if (characterChoose == 2) {
+                   currentPlayer = new Player(110,100,"An Asian");
+                   percent = 0.90;
+                   console.log("asian");
+                }
+                if (characterChoose == 3) {
+                   currentPlayer = new Player(110,100,"A Hispanic/Latina");
+                   percent = 0.54;
+                   console.log("latina");
+                }
                 playGame = true;
                 stats = false;
+                pos1 = true;
                 score = 0;
                 count = 60;
+                playerRun = 7;
             }
             if (mouseX >= playBtnX+200 && mouseX <= ((playBtnX+200)+playBtnWidth) &&
                 mouseY >= playBtnY && mouseY <= (playBtnY+playBtnHeight)) {
