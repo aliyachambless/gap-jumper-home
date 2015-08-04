@@ -232,7 +232,7 @@ var animate = function(){
 };
 var count = 60, timer = setInterval(function() {
     $("#counter").html(count--);
-    if(count == -1) clearInterval(timer);
+    //if(count == -1) clearInterval(timer);
 }, 1000);
 
 var Spikes = function(triangleYThree, triangleMove){
@@ -1086,7 +1086,7 @@ $("body").keydown(function(c){
     }
     */
 });
-$("body").keyup(function(c){
+$("canvas").keyup(function(c){
    if (c.keyCode == 39) {
       moving = false;
       speed = 0;
