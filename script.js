@@ -5,6 +5,7 @@ var currentPlayer;
 var playerRun = 7;
 var pos1 = true;
 var currentImage;
+var muted = false;
 //var keyIsPressed;
 //sounds
 //var coinSound = new buzz.sound( "/146723__fins__coin-object", {
@@ -1103,3 +1104,17 @@ $("body").keyup(function(c){
     }
     */
 });
+   $("#muteIcon").click(function(){
+    if (muted == false) {
+        document.getElementById('background_audio').muted = true;
+        muted = true;
+        $("#mute").find($(".fa")).removeClass('fa-volume-up').addClass('fa-volume-off');
+        console.log("muted");
+    }
+    else if (muted == true) {
+        muted = false;
+        document.getElementById('background_audio').muted = false;
+        $("#mute").find($(".fa")).removeClass('fa-volume-off').addClass('fa-volume-up');
+        console.log("UnMuted");
+    }
+   });
